@@ -1,0 +1,7 @@
+bookstore/
+├── index.html          (Главная страница)
+├── catalog.html        (Каталог книг)
+├── contacts.html       (Контакты и корзина)
+├── css/
+│   └── style.css       (Общие стили)
+└── images/             (папка с изображениями)
