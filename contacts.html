@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore - Контакты и Корзина</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>📚 BookStore</h1>
+                <p>Книги для всех</p>
+            </div>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">☰</label>
+            
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="contacts.html" class="active">Контакты</a>
+                <a href="#cart" class="cart-icon">
+                    🛒 Корзина <span class="cart-count" id="cartCount">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Корзина -->
+            <section id="cart">
+                <h1 class="section-title">Корзина</h1>
+                <div id="cartContent"></div>
+            </section>
+            
+            <!-- Контакты -->
+            <section id="contacts">
+                <h1 class="section-title">Контакты</h1>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Свяжитесь с нами</h3>
+                        <p><i class="fas fa-phone"></i> <strong>Телефон:</strong> +7 (800) 123-45-67</p>
+                        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> info@bookstore.ru</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Адрес:</strong> г. Москва, ул. Книжная, д. 10</p>
+                        <p><i class="fas fa-clock"></i> <strong>График работы:</strong> Пн-Пт 10:00–20:00, Сб 11:00–18:00</p>
+                    </div>
+                    
+                    <div class="map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A123456789&source=constructor" width="100%" height="300" frameborder="0"></iframe>
+                    </div>
+                </div>
+                
+                <h2 class="section-title" style="font-size: 1.5rem;">Форма обратной связи</h2>
+                <form class="contact-form" id="feedbackForm">
+                    <div class="form-group">
+                        <label>Имя *</label>
+                        <input type="text" id="feedbackName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email *</label>
+                        <input type="email" id="feedbackEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Сообщение *</label>
+                        <textarea id="feedbackMessage" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>📚 BookStore</h4>
+                    <p>Интернет-магазин книг с 2024 года</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <a href="index.html">Главная</a>
+                    <a href="catalog.html">Каталог</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>📞 +7 (800) 123-45-67</p>
+                    <p>✉ info@bookstore.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 BookStore. Все права защищены.</p
